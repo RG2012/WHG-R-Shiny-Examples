@@ -14,4 +14,10 @@ It contains serveral parts:
 <li>Reactive expressions</li>
 </ul>
 <br/>
+
+<uo>
 <a name="GettingStart"><li><b>Getting Start of Shiny</b></li></a>
+<p>
+  In this section, there is a simple R Shiny Application to show how fascinating it is. You will have a rough overview of R Shiny and using R in web.
+</p>
+</uo>
