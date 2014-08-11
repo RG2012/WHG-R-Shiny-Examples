@@ -14,4 +14,4 @@ It contains serveral parts:
 <li>Reactive expressions</li>
 </ul>
 <br/>
-<a name="GettingStart">Getting Start of Shiny</a>
+<a name="GettingStart"><li><b>Getting Start of Shiny</b></li></a>
