@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\nshinyServer(function(input, output) {\n  output$map <- renderPlot({\n    plot(chinamap,col=getColor(chinamap,provname,provcol,\"white\"),xlab=\"\",ylab=\"\");\n  })\n})\n",
+    "created" : 1407573363064.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2494570333",
+    "id" : "F60273F0",
+    "lastKnownWriteTime" : 1407575341,
+    "path" : "E:/快盘/工作记录/Shiny/Part1-lesson5/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

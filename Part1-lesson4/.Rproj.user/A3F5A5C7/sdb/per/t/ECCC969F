@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\n\nshinyServer(function(input, output) {\n   \n  output$distPlot <- renderPlot({\n     \n    # generate and plot an rnorm distribution with the requested\n    # number of observations\n    dist <- rnorm(input$obs)\n    hist(dist)\n    \n  })\n  \n  output$info <- renderText({\n    paste(\"Hello,\", input$name, \", your birthday is\", input$birth)\n  })\n  \n})\n",
+    "created" : 1407572484472.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2541988741",
+    "id" : "ECCC969F",
+    "lastKnownWriteTime" : 1407573053,
+    "path" : "E:/快盘/工作记录/Shiny/Part1-lesson4/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

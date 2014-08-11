@@ -1,0 +1,16 @@
+{
+    "contents" : "#example for HTML content\nlibrary(shiny)\n\nshinyUI(pageWithSidebar(\n  \n  # Application title\n  headerPanel(\"New Application\"),\n  \n  # Sidebar with a slider input for number of observations\n  sidebarPanel(\n    sliderInput(\"obs\", \n                \"Number of observations:\", \n                min = 1, \n                max = 1000, \n                value = 500)\n  ),\n  \n  # Show a plot of the generated distribution\n  mainPanel(\n    h6(\"Episode IV\", align = \"center\"),\n    h6(\"A NEW HOPE\", align = \"center\"),\n    h5(\"It is a period of civil war.\", align = \"center\"),\n    h4(\"Rebel spaceships, striking\", align = \"center\"),\n    h3(\"from a hidden base, have won\", align = \"center\"),\n    h2(\"their first victory against the\", align = \"center\"),\n    h1(\"evil Galactic Empire.\"),\n    code(\"R code\"),\n    p('My first paragraph, with some ', strong('bold'), ' text.'),\n    a(\"my web site\", href=\"http://www.iwhgao.com\", target=\"_blank\"),\n    plotOutput('distPlot')\n  )\n))\n",
+    "created" : 1407561983163.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1208451781",
+    "id" : "7C0F6786",
+    "lastKnownWriteTime" : 1407562740,
+    "path" : "E:/快盘/工作记录/Shiny/Part1-lesson2/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

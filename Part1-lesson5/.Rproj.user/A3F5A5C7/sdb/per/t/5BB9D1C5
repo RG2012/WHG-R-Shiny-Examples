@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\nsource(\"./help.R\");\n\nshinyUI(pageWithSidebar(\n  \n  # Application title\n  headerPanel(\"Map Application\"),\n  \n  sidebarPanel(\n    h2(\"China population map\")\n  ),\n  \n  mainPanel(\n    plotOutput(\"map\")\n  )\n))\n",
+    "created" : 1407573362880.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3937520280",
+    "id" : "5BB9D1C5",
+    "lastKnownWriteTime" : 1407575978,
+    "path" : "E:/快盘/工作记录/Shiny/Part1-lesson5/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

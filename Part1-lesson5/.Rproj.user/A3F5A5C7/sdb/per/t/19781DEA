@@ -1,0 +1,17 @@
+{
+    "contents" : "#导入相关的模块\nlibrary(\"maps\");\nlibrary(\"mapdata\");\nlibrary(\"maptools\");\n\n#一些有用的函数\ngetColor=function(mapdata,provname,provcol,othercol)\n{\n  f=function(x,y) ifelse(x %in% y,which(y==x),0);\n  colIndex=sapply(mapdata$NAME,f,provname);\n  fg=c(othercol,provcol)[colIndex+1];\n  return(fg);\n}\n\n#读取中国地图的外形数据\nchinamap <- readShapePoly(fn=\"./data/bou2_4p.shp\");\n\n#读取用户自定义人口数据\nchinapop <- read.csv(file=\"./data/pop.csv\", header=T);\n\n#对个别省市设置颜色并在地图上进行显示\n\n#--------------------------------------------------------------\n\n#绘制中国各省市人口分布热图\nprovname=chinapop$provname;\nprovpop=chinapop$population;\n\n#构建人口数量对应的颜色条，越红人口越多，越绿人口越少\nprovcol=rgb(red=1-provpop/max(provpop)/2,green=1-provpop/max(provpop)/2,blue=0);\n",
+    "created" : 1407574058054.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "863713700",
+    "id" : "19781DEA",
+    "lastKnownWriteTime" : 1407575434,
+    "path" : "E:/快盘/工作记录/Shiny/Part1-lesson5/help.R",
+    "project_path" : "help.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

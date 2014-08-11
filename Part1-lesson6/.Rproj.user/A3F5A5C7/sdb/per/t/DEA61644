@@ -1,0 +1,16 @@
+{
+    "contents" : "# server.R\n\nlibrary(quantmod)\nsource(\"helpers.R\")\n\nshinyServer(function(input, output) {\n\n  output$plot <- renderPlot({\n    data <- getSymbols(input$symb, src = \"yahoo\", \n      from = input$dates[1],\n      to = input$dates[2],\n      auto.assign = FALSE)\n                 \n    chartSeries(data, theme = chartTheme(\"white\"), \n      type = \"line\", log.scale = input$log, TA = NULL)\n  })\n  \n})",
+    "created" : 1407594732695.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4057271954",
+    "id" : "DEA61644",
+    "lastKnownWriteTime" : 1407594755,
+    "path" : "E:/快盘/工作记录/Shiny/Part1-lesson6/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
