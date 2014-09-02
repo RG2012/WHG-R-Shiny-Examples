@@ -1,0 +1,1 @@
+This example displays how to use the selectize input widget in Shiny. The common different between the selectInput with selectizeInput is that selectInput is the specific selectizeInput where the selectize=F in selectInput. The major different is that selectizeInput method has a `options` argument to do the same things in selectize.js.
