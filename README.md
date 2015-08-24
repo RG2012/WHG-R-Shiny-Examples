@@ -21,3 +21,5 @@ It contains serveral parts:
   In this section, there is a simple R Shiny Application to show how fascinating it is. You will have a rough overview of R Shiny and using R in web.
 </p>
 </uo>
+
+<hr/>
